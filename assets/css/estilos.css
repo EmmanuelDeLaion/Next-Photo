@@ -31,6 +31,12 @@ h1, h2, h3, h4, h5, h6, p, li{
 
 
 /* navbar y cabecera */
+
+.carousel {
+ 
+    text-align: center;
+}
+
 .btn-portada1{
     position: absolute;
     top: 70%;
@@ -179,8 +185,6 @@ h1, h2, h3, h4, h5, h6, p, li{
 }
 
 /* Testimonios */
-
- 
 
 .carousel-item p {
     font-size: 26px;
