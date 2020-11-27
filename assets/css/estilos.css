@@ -12,6 +12,23 @@ body,html{
     margin-top: 45px;
 }
 
+
+
+body, html{
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background:  #ffb944;
+    
+}
+  
+
+  
+
 *{
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
