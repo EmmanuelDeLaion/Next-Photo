@@ -25,9 +25,9 @@
     <!-- seccion navbar y carusel -->
     <header>
         <!-- navbar  -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top shadow-sm p-3 mb-5 bg-white rounded navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img src="/assets/images/logo.png" width="80" height="80" alt="" loading="lazy">
+                <img src="/assets/images/logo.png" width="50" height="50" alt="" loading="lazy">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -41,7 +41,7 @@
                         <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Paquetes</a>
+                        <a class="nav-link" href="#paquetes">Paquetes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">¿Quienes somos?</a>
@@ -74,10 +74,27 @@
 
                 <div class="carousel-item" data-interval="10000">
                     <div class="d-block w-100 imagen-portada1">
-                        <img src="/assets/images/portada1.jpg" class="d-block w-100" alt="...">
+                        <img src="/assets/images/cateorias/casuales.jpg" class="d-block w-100" alt="...">
                         <button
-                            class="btn btn-portada2 d-none d-xl-block d-lg-block d-md-block d-sm-block d-xs-none">Ver
+                            class="btn btn-portada3 d-none d-xl-block d-lg-block d-md-block d-sm-block d-xs-none">Ver
                             paquetes</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-interval="10000">
+                    <div class="d-block w-100 imagen-portada1">
+                        <img src="/assets/images/cateorias/xv.jpg" class="d-block w-100" alt="...">
+                        <button
+                            class="btn btn-portada4 d-none d-xl-block d-lg-block d-md-block d-sm-block d-xs-none">Ver
+                            paquetes</button>
+                    </div>
+                </div>
+
+                
+
+                <div class="carousel-item" data-interval="10000">
+                    <div class="d-block w-100 imagen-portada1">
+                        <img src="/assets/images/portada4.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
 
@@ -101,13 +118,85 @@
         </div>
     </section>
 
-    <section class="seccion-paquetes">
+    <section id="paquetes" class="seccion-paquetes">
         <h2>Paquetes de Next Photo</h2>
         <hr>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <img src="/assets/images/cateorias/boda.jpg" class="card-img-top img-fluid" alt="">
+                        <h4 class="text-center mt-3">Paquete 1</h4>
+                        <ul class="mt-4">
+                            <li>Cobertura de fotográfica tipo documental (makeup, iglesia, evento)</li>
+                            <li>50 Fotografías impresas 5x7”</li>
+                            <li>Sesión fotográfica previa</li>
+                            <li>Sesión fotográfica el dia del evento</li>
+                            <li>Ampliación fotográfica tamaño 11x14” con soporte y textura</li>
+                            <li>Ampliación Fotográfica tamaño 16x20” con soporte y textura</li>
+                        </ul>
+                        <h5 class="text-center">Precio:</h5>
+                        <h5 class="text-center precio">$8,500</h5>
+                        <button class="btn-solicitar btn-block mb-3">Solicitar</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <img src="/assets/images/portada1.jpg" class="card-img-top img-fluid" alt="">
+                        <h4 class="text-center mt-3">Paquete 2</h4>
+                        <ul class="mt-4">
+                            <li>Cobertura de fotográfica tipo documental (makeup, iglesia, evento)</li>
+                            <li>150 Fotografías impresas 5x7”</li>
+                            <li>Sesión fotográfica previa</li>
+                            <li>Sesión fotográfica el día del evento</li>
+                            <li>Ampliación fotográfica tamaño 11x14” con marco, textura y soporte</li>
+                            <li>Ampliación Fotográfica tamaño 16x20” con marco, textura y soporte</li>
+                            <li>Video clip 4k con los momentos más importantes del evento</li>
+                            <li>Video del evento (duración de aproximadamente 2 horas) en Full HD, entregado en USB</li>
+                        </ul>
+                        <h5 class="text-center">Precio:</h5>
+                        <h5 class="text-center precio">$13,500</h5>
+                        <button class="btn-solicitar btn-block mb-3">Solicitar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-4">
+                <div class="col-12 col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <img src="/assets/images/cateorias/casuales.jpg" class="card-img-top img-fluid" alt="">
+                        <h4 class="text-center mt-3">Paquete 3</h4>
+                        <ul class="mt-4">
+                            <li>25 imágenes editadas</li>
+                            <li>3 cambios</li>
+                            <li>1 hora de sesión</li>
+                            <li>1 fotografía impresa 8x10”</li>
+                            <li>5 fotografías impresas 6x8”</li>
+                        </ul>
+                        <h5 class="text-center">Precio:</h5>
+                        <h5 class="text-center precio">$1,550</h5>
+                        <button class="btn-solicitar btn-block mb-3">Solicitar</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <img src="/assets/images/cateorias/exterior.jpg" class="card-img-top img-fluid" alt="">
+                        <h4 class="text-center mt-3">Paquete 4</h4>
+                        <ul class="mt-4">
+                            <li>20 imágenes editadas</li>
+                            <li>2 cambios</li>
+                            <li>1 hora de sesión</li>
+                        </ul>
+                        <h5 class="text-center">Precio:</h5>
+                        <h5 class="text-center precio">$850</h5>
+                        <button class="btn-solicitar btn-block mb-3">Solicitar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
-
-
 
 
     <script>
