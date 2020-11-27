@@ -1,0 +1,43 @@
+ 
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-portada1{
+    position: absolute;
+    top: 70%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+}
+
+.btn-portada1:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+.btn-portada2{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+}
+
+.btn-portada2:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+ 
