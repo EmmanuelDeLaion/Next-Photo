@@ -14,6 +14,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/0dd7a6f868.js" crossorigin="anonymous"></script>
 
     <!-- Link Swiper's CSS -->
@@ -45,11 +50,12 @@
                         <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#paquetes">Paquetes</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#portafolio">Portafolio</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#paquetes">Paquetes</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#quienessomos">¿Quienes somos?</a>
                     </li>
@@ -62,6 +68,8 @@
                 </ul>
             </div>
         </nav>
+
+
 
         <!-- carusel -->
         <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
@@ -131,9 +139,9 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-
     </header>
+
+
 
 
     <!-- texto paquetes -->
@@ -168,6 +176,7 @@
             </div>
         </div>
     </section>
+
 
 
     <!-- texto paquetes -->
@@ -219,6 +228,8 @@
     </section>
 
 
+
+
     <!-- imagenes swiper -->
     <section class="container-imagenes-swiper mt-4">
         <!-- Swiper -->
@@ -237,10 +248,9 @@
                 <div class="swiper-slide" style="background-image:url(assets/images/fotos/foto12.jpg)"></div>
 
             </div>
-    
+
             <!-- <div class="swiper-pagination"></div> -->
         </div>
-
     </section>
 
 
@@ -249,10 +259,9 @@
     <div class="video-comercial">
         <div class="overlay"></div>
         <div class="absolute">
-            <h3 class="titulo-video">Next Photo <span>
+            <h3 class="titulo-video titulo-paquete">Next Photo <span>
                     <p>“Las fotografías más bellas son aquellas que te generan recuerdos.”</p>
                 </span></h3>
-
         </div>
         <video onloadedmetadata="this.muted=true" autoplay loop>
             <source src="assets/videos/video.m4v">
@@ -284,8 +293,8 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="card">
-                        <img src="/assets/images/cateorias/boda.jpg" class="card-img-top img-fluid" alt="">
-                        <h4 class="text-center mt-3">Paquete 1</h4>
+                        <img src="/assets/images/cateorias/casuales.jpg" class="card-img-top img-fluid" alt="">
+                        <h1 class="text-center titulo-paquete mt-3">Paquete 1</h1>
                         <ul class="mt-4">
                             <li>Cobertura de fotográfica tipo documental (makeup, iglesia, evento)</li>
                             <li>50 Fotografías impresas 5x7”</li>
@@ -305,8 +314,8 @@
 
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="card">
-                        <img src="/assets/images/portada1.jpg" class="card-img-top img-fluid" alt="">
-                        <h4 class="text-center mt-3">Paquete 2</h4>
+                        <img src="/assets/images/portada3.jpg" class="card-img-top img-fluid" alt="">
+                        <h1 class="text-center titulo-paquete mt-3">Paquete 2</h1>
                         <ul class="mt-4">
                             <li>Cobertura de fotográfica tipo documental (makeup, iglesia, evento)</li>
                             <li>150 Fotografías impresas 5x7”</li>
@@ -329,8 +338,8 @@
             <div class="row justify-content-center mt-4">
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="card">
-                        <img src="/assets/images/cateorias/casuales.jpg" class="card-img-top img-fluid" alt="">
-                        <h4 class="text-center mt-3">Paquete 3</h4>
+                        <img src="/assets/images/cateorias/boda.jpg" class="card-img-top img-fluid" alt="">
+                        <h1 class="text-center titulo-paquete mt-3">Sesión Boda y XV</h1>
                         <ul class="mt-4">
                             <li>25 imágenes editadas</li>
                             <li>3 cambios</li>
@@ -349,7 +358,7 @@
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="card">
                         <img src="/assets/images/cateorias/exterior.jpg" class="card-img-top img-fluid" alt="">
-                        <h4 class="text-center mt-3">Paquete 4</h4>
+                        <h1 class="text-center titulo-paquete mt-3">Sesiones casuales (exterior y estudio)</h1>
                         <ul class="mt-4">
                             <li>20 imágenes editadas</li>
                             <li>2 cambios</li>
@@ -365,8 +374,9 @@
             </div>
         </div>
     </section>
+ 
 
-
+    <!-- quienes somos  -->
     <section id="quienessomos">
         <div class="container">
             <div class="row">
@@ -377,7 +387,7 @@
                         </div>
                     </div>
 
-                    <h2 class="text-center">Misión</h2>
+                    <h2 class="text-center titulo-paquete">Misión</h2>
                     <h6 class="text-center font-weight-light">
                         Somos una empresa dedicada a ofrecer servicios de fotografía, utilizando calidad en cada uno de
                         nuestros servicios, con el propósito de satisfacer las necesidades de nuestros clientes,
@@ -390,7 +400,7 @@
                             <i class=" icono-m fas fa-crosshairs"></i>
                         </div>
                     </div>
-                    <h2 class="text-center">Visión</h2>
+                    <h2 class="text-center titulo-paquete">Visión</h2>
                     <h6 class="text-center font-weight-light">
                         Lograr la satisfacción de cada uno de nuestros clientes con el servicio que ofrecemos y cumplir
                         nuestro objetivo general.
@@ -402,7 +412,7 @@
                             <i class="icono-m fas fa-heart"></i>
                         </div>
                     </div>
-                    <h2 class="text-center ">Valores</h2>
+                    <h2 class="text-center titulo-paquete">Valores</h2>
                     <ul>
                         <li>
                             <h6 class="font-weight-light">Respeto</h6>
@@ -622,6 +632,7 @@
 
 
 
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
@@ -672,6 +683,8 @@
             })
         }
     </script>
+
+<script src="assets/js/script.js"></script>
 
 </body>
 
