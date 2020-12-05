@@ -13,6 +13,12 @@ body,html{
 }
 
 
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
 
 body, html{
     overflow-y: scroll;
@@ -33,7 +39,8 @@ body::-webkit-scrollbar-thumb{
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .bgDark { background-color: var(--dark-color); }
@@ -317,6 +324,16 @@ span{
 }
 
 
+@font-face {
+    font-family: hello;
+    src: url(/assets/fonts/Hello.otf);
+}
+
+.titulo-paquete{
+    font-family: hello, serif;
+}
+
+
 
 /* quienes somos */
 .circulo{
@@ -345,6 +362,8 @@ span{
 }
 
 
+ 
+ 
 
 
 /* Testimonios */
@@ -444,4 +463,20 @@ footer a:hover {
 
 footer .list-inline .list-inline-item {
     padding: 10px 15px;
+}
+
+
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+ 
 }
