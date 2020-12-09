@@ -57,7 +57,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#quienessomos">¿Quienes somos?</a>
+                        <a class="nav-link" href="#teams">¿Quienes somos?</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#resenas">Reseñas</a>
@@ -147,7 +147,7 @@
     <!-- texto paquetes -->
     <section id="pricing" class="divider">
         <div class="container">
-            <h2>Categorias <b>Next Photo</b></h2>
+            <h2 class="titulo-paquete ">Categorias <b>Next Photo</b></h2>
         </div>
     </section>
 
@@ -183,7 +183,7 @@
     <section id="pricing" class="divider">
         <div class="container">
             <div class="content-center">
-                <h2 class="font-weight-light"><b>Portafolio </b></h2>
+                <h2 class="font-weight-light titulo-paquete ">Portafolio</h2>
             </div>
         </div>
     </section>
@@ -275,7 +275,7 @@
     <section id="pricing" class="divider margen">
         <div class="container ">
             <div class="content-center">
-                <h2>Paquetes de <b>Next Photo</b></h2>
+                <h2 class="titulo-paquete ">Paquetes de <b>Next Photo</b></h2>
                 <p>“Las fotografías más bellas son aquellas que te generan recuerdos.”
                 </p>
                 <p>
@@ -284,6 +284,58 @@
             </div>
         </div>
     </section>
+
+
+    <!-- modal solicitar paquete  -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"> Paquete 1 </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input placeholder="Nombre" type="text" class="form-control" id="nombre"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <label for="Telefono">Teléfono:</label>
+                                    <input placeholder="Teléfono" type="text" class="form-control" id="Telefono">
+                                </div>
+
+                                <div class="form-group col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <label for="Cantidad">Cantidad:</label>
+                                    <input placeholder="1" type="number" class="form-control" id="Cantidad">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Hora">Fecha y hora:</label>
+                                <input placeholder="Hora" type="datetime-local" class="form-control" id="Hora"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <h4 class="text-center">Precio: <span class="badge badge-warning">$8,500 </span> </h4>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-warning">Solicitar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -305,7 +357,8 @@
                         </ul>
                         <h5 class="text-center">Precio:</h5>
                         <h5 class="text-center precio">$8,500</h5>
-                        <button class="btn-solicitar btn-block mb-3">Solicitar</button>
+                        <button class="btn-solicitar btn-block mb-3" type="button" data-toggle="modal"
+                            data-target="#staticBackdrop">Solicitar</button>
                     </div>
                     <br>
                 </div>
@@ -374,10 +427,70 @@
             </div>
         </div>
     </section>
- 
+
+
+
+
+    <!-- equipo -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title titulo-paquete display-4 text-center">¿Quienes somos?</h2>
+            <p class="text-center mb-4">Somos una microempresa que ofrece servicios de fotografía al público en general,
+                ubicada en la ciudad El Mante. Que busca generar la máxima satisfacción en cada uno de nuestros
+                clientes.</p>
+            <div class="carousel-equipo owl-carousel">
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="card-team">
+                            <div class="box-team">
+                                <img src="assets/images/equipo/Berenice.jpg" alt="">
+                                <div class="text">Berenice Mendoza</div>
+                                <p>Editora</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="card-team">
+                            <div class="box-team">
+                                <img src="assets/images/equipo/citlali.jpg" alt="">
+                                <div class="text">Citlali Castillo</div>
+                                <p>Líder y encargada de la atención con el cliente</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="card-team">
+                            <div class="box-team">
+                                <img src="assets/images/equipo/monica.jpg" alt="">
+                                <div class="text">Mónica Ramírez Mata</div>
+                                <p>Ayudante</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="card-team">
+                            <div class="box-team">
+                                <img src="assets/images/equipo/cesar.png" alt="">
+                                <div class="text">Cesar Alexis Ramírez</div>
+                                <p>Fotógrafo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
 
     <!-- quienes somos  -->
-    <section id="quienessomos">
+    <section id="">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-4 col-md-4 col-sm-6 col-xs-12 p-5">
@@ -606,7 +719,7 @@
                 <li class="list-inline-item footer-menu"><a href="#">Inicio</a></li>
                 <li class="list-inline-item footer-menu"><a href="#paquetes">Paquetes</a></li>
                 <li class="list-inline-item footer-menu"><a href="#portafolio">Portafolio</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">¿Quienes somos?</a></li>
+                <li class="list-inline-item footer-menu"><a href="#teams">¿Quienes somos?</a></li>
                 <li class="list-inline-item footer-menu"><a href="#resenas">Reseñas</a></li>
                 <li class="list-inline-item footer-menu"><a href="#contacto">Contacto</a></li>
             </ul>
@@ -624,12 +737,10 @@
         </div>
     </footer>
 
+
     <script>
         AOS.init();
     </script>
-
-
-
 
 
 
@@ -684,7 +795,7 @@
         }
     </script>
 
-<script src="assets/js/script.js"></script>
+
 
 </body>
 
