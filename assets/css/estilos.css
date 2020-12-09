@@ -362,9 +362,6 @@ span{
 }
 
 
- 
- 
-
 
 /* Testimonios */
 
@@ -467,9 +464,117 @@ footer .list-inline .list-inline-item {
 
 
 
+
+
+
+/* equipo  */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+ 
+
+ 
+ 
+ 
+
+
+/* services section styling */
+.teams{
+    padding: 50px;
+    background: rgb(255, 255, 255);
+}
+
+ 
+ 
+
+/* teams section styling */
+ 
+.teams .carousel-equipo .card-team{
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    border: 3px solid #ffb30054;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel-equipo .card-team:hover{
+    background: #FFB300;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 24px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 24px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 24px -12px rgba(0,0,0,0.75);
+}
+.teams .carousel-equipo .card-team .box-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel-equipo .card-team:hover .box-team{
+    transform: scale(1.05);
+}
+.teams .carousel-equipo .card-team .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: rgb(46, 46, 46);
+}
+.teams .carousel-equipo .card-team img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #FFB300;
+    transition: all 0.3s ease;
+}
+.teams .carousel-equipo .card-team:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid  #FFB300!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #FFB300!important;
+}
+ 
+
+
+/* responsive media query start */
+@media (max-width: 1300px) {
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+ 
+
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px){
+    .max-width{
+        max-width: 930px;
     }
 }
 
@@ -478,5 +583,10 @@ footer .list-inline .list-inline-item {
     .max-width{
         padding: 0 23px;
     }
- 
+   
 }
+
+ 
+
+
+
