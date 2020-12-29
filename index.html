@@ -236,6 +236,7 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image:url(assets/images/fotos/foto2.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(assets/images/fotos/foto13.jpg)"></div>
                 <div class="swiper-slide" style="background-image:url(assets/images/fotos/foto3.jpg)"></div>
                 <div class="swiper-slide" style="background-image:url(assets/images/fotos/foto4.jpg)"></div>
                 <div class="swiper-slide" style="background-image:url(assets/images/fotos/foto5.jpg)"></div>
@@ -286,40 +287,41 @@
     </section>
 
 
-    <!-- modal solicitar paquete  -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel"> Paquete 1 </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
 
+    <!-- modal solicitar paquete 1  -->
+    <div class="  modal fade" id="modal-paquete1" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="modal-paquete1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-borde">
+                <img src="/assets/images/paquetes-imagenes/paquete1.jpg" class="card-img-top" alt="...">
+                <div class="modal-body">
                     <div class="container">
                         <form>
                             <div class="form-group">
-                                <label for="nombre">Nombre:</label>
+                                <!-- <label for="nombre">Nombre:</label> -->
                                 <input placeholder="Nombre" type="text" class="form-control" id="nombre"
                                     aria-describedby="emailHelp">
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <label for="Telefono">Teléfono:</label>
+                                    <!-- <label for="Telefono">Teléfono:</label> -->
                                     <input placeholder="Teléfono" type="text" class="form-control" id="Telefono">
                                 </div>
 
                                 <div class="form-group col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <label for="Cantidad">Cantidad:</label>
-                                    <input placeholder="1" type="number" class="form-control" id="Cantidad">
+                                    <!-- <label for="Cantidad">Cantidad:</label> -->
+                                    <input placeholder="Cantidad" type="number" class="form-control" id="Cantidad">
                                 </div>
+
+                            </div>
+
+                            <div class="form-group  ">
+                                <!-- <label for="Cantidad">Ubicación:</label> -->
+                                <input placeholder="Ubicación" type="text" class="form-control" id="Ubicación">
                             </div>
 
                             <div class="form-group">
-                                <label for="Hora">Fecha y hora:</label>
+                                <!-- <label for="Hora">Fecha y hora:</label> -->
                                 <input placeholder="Hora" type="datetime-local" class="form-control" id="Hora"
                                     aria-describedby="emailHelp">
                             </div>
@@ -328,9 +330,164 @@
                     </div>
 
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-warning">Solicitar</button>
+
+                <div class="container mb-3">
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn-secondary " data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-warning ml-2">Solicitar</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- modal solicitar paquete 2  -->
+    <div class="modal fade" id="modal-paquete2" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="modal-paquete12" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img src="/assets/images/paquetes-imagenes/paquete2.jpg" class="card-img-top" alt="...">
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <input placeholder="Nombre" type="text" class="form-control" id="nombre"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <input placeholder="Teléfono" type="text" class="form-control" id="Telefono">
+                                </div>
+
+                                <div class="form-group col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <input placeholder="Cantidad" type="number" class="form-control" id="Cantidad">
+                                </div>
+
+                            </div>
+
+                            <div class="form-group  ">
+                                <input placeholder="Ubicación" type="text" class="form-control" id="Ubicación">
+                            </div>
+
+                            <div class="form-group">
+                                <input placeholder="Hora" type="datetime-local" class="form-control" id="Hora"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <h4 class="text-center">Precio: <span class="badge badge-warning">$13,500 </span> </h4>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="container mb-3">
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn-secondary " data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-warning ml-2">Solicitar</button>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal solicitar paquete 3 -->
+    <div class="modal fade" id="modal-paquete3" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="modal-paquete3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img src="/assets/images/paquetes-imagenes/sesion-boda-xv.jpg" class="card-img-top" alt="...">
+
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <input placeholder="Nombre" type="text" class="form-control" id="nombre"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <input placeholder="Teléfono" type="text" class="form-control" id="Telefono">
+                                </div>
+
+                                <div class="form-group col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <input placeholder="Cantidad" type="number" class="form-control" id="Cantidad">
+                                </div>
+
+                            </div>
+
+                            <div class="form-group  ">
+                                <input placeholder="Ubicación" type="text" class="form-control" id="Ubicación">
+                            </div>
+
+                            <div class="form-group">
+                                <input placeholder="Hora" type="datetime-local" class="form-control" id="Hora"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <h4 class="text-center">Precio: <span class="badge badge-warning">$1,550 </span> </h4>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="container mb-3">
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn-secondary " data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-warning ml-2">Solicitar</button>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal solicitar paquete 4  -->
+    <div class="modal fade" id="modal-paquete4" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="modal-paquete4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img src="/assets/images/paquetes-imagenes/exterior-estudio.jpg" class="card-img-top" alt="...">
+
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <input placeholder="Nombre" type="text" class="form-control" id="nombre"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <input placeholder="Teléfono" type="text" class="form-control" id="Telefono">
+                                </div>
+
+                                <div class="form-group col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <input placeholder="Cantidad" type="number" class="form-control" id="Cantidad">
+                                </div>
+
+                            </div>
+
+                            <div class="form-group  ">
+                                <input placeholder="Ubicación" type="text" class="form-control" id="Ubicación">
+                            </div>
+
+                            <div class="form-group">
+                                <input placeholder="Hora" type="datetime-local" class="form-control" id="Hora"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <h4 class="text-center">Precio: <span class="badge badge-warning">$850 </span> </h4>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="container mb-3">
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn-secondary " data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-warning ml-2">Solicitar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -341,7 +498,7 @@
 
     <!-- paquetes -->
     <section id="paquetes" class="seccion-paquetes">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="card">
@@ -358,7 +515,7 @@
                         <h5 class="text-center">Precio:</h5>
                         <h5 class="text-center precio">$8,500</h5>
                         <button class="btn-solicitar btn-block mb-3" type="button" data-toggle="modal"
-                            data-target="#staticBackdrop">Solicitar</button>
+                            data-target="#modal-paquete1">Solicitar</button>
                     </div>
                     <br>
                 </div>
@@ -381,7 +538,8 @@
                         </ul>
                         <h5 class="text-center">Precio:</h5>
                         <h5 class="text-center precio">$13,500</h5>
-                        <button class="btn-solicitar btn-block mb-3">Solicitar</button>
+                        <button class="btn-solicitar btn-block mb-3" type="button" data-toggle="modal"
+                            data-target="#modal-paquete2">Solicitar</button>
                     </div>
                     <br>
                 </div>
@@ -402,7 +560,8 @@
                         </ul>
                         <h5 class="text-center">Precio:</h5>
                         <h5 class="text-center precio">$1,550</h5>
-                        <button class="btn-solicitar btn-block mb-3">Solicitar</button>
+                        <button class="btn-solicitar btn-block mb-3" type="button" data-toggle="modal"
+                            data-target="#modal-paquete3">Solicitar</button>
                     </div>
                     <br>
                 </div>
@@ -419,7 +578,8 @@
                         </ul>
                         <h5 class="text-center">Precio:</h5>
                         <h5 class="text-center precio">$850</h5>
-                        <button class="btn-solicitar btn-block mb-3">Solicitar</button>
+                        <button class="btn-solicitar btn-block mb-3" type="button" data-toggle="modal"
+                            data-target="#modal-paquete4">Solicitar</button>
                     </div>
                     <br>
                 </div>
@@ -440,7 +600,7 @@
                 clientes.</p>
             <div class="carousel-equipo owl-carousel">
                 <div class="row">
-                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-2">
                         <div class="card-team">
                             <div class="box-team">
                                 <img src="assets/images/equipo/Berenice.jpg" alt="">
@@ -449,7 +609,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-2">
                         <div class="card-team">
                             <div class="box-team">
                                 <img src="assets/images/equipo/citlali.jpg" alt="">
@@ -458,7 +618,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-2">
                         <div class="card-team">
                             <div class="box-team">
                                 <img src="assets/images/equipo/monica.jpg" alt="">
@@ -467,7 +627,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-2">
                         <div class="card-team">
                             <div class="box-team">
                                 <img src="assets/images/equipo/cesar.png" alt="">
@@ -565,8 +725,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-container">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ea consequuntur, odit
-                                veniam mollitia aliquam reiciendis dignissimos, vitae sapiente neque, cum dolorum."
+                            <p>"Muy bonitas fotos, muy recomendado"
                             </p>
                             <div class="rating">
                                 <ul class="list-inline">
@@ -592,8 +751,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-container">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ea consequuntur, odit
-                                veniam mollitia aliquam reiciendis dignissimos, vitae sapiente neque, cum dolorum."</p>
+                            <p>"El trato al cliente es muy bueno, me gustaron mucho las fotos, buen precio "</p>
                             <div class="rating">
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><i class="fas fa-star"></i></li>
@@ -618,8 +776,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-container">
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ea consequuntur, odit
-                                veniam mollitia aliquam reiciendis dignissimos, vitae sapiente neque, cum dolorum."</p>
+                            <p>"Buen trato al cliente, excelente trabajo"</p>
                             <div class="rating">
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><i class="fas fa-star"></i></li>
@@ -645,12 +802,14 @@
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <div class="control-button">
-                        <i class="fas fa-arrow-circle-left"></i> </div>
+                        <i class="fas fa-arrow-circle-left"></i>
+                    </div>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                     <div class="control-button">
-                        <i class="fas fa-arrow-circle-right"></i></div>
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </div>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
@@ -664,6 +823,7 @@
     <!-- contacto -->
     <section class="seccion-contacto" id="contacto">
         <div class="container mb-4">
+
             <div class="row">
                 <div class=" col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
                     <h3>Si tienes dudas o sugerencias <b>contáctanos.</b></h3>
@@ -671,42 +831,47 @@
                     </p>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="" placeholder="Nombre">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Nombre">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="" placeholder="Apellido">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Apellido">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="" placeholder="Email">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="" placeholder="Email">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="" placeholder="Teléfono (optional)">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Teléfono (optional)">
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea type="text" class="form-control" id="" placeholder="Mensaje"
+                                        rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <button onclick="mensaje()" class="btn btn-contacto btn-block">Enviar</button>
                             </div>
                         </div>
+                    </form>
 
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <textarea type="text" class="form-control" id="" placeholder="Mensaje"
-                                    rows="3"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <button onclick="mensaje()" class="btn btn-contacto btn-block">Enviar</button>
-                        </div>
-                    </div>
                 </div>
             </div>
+
+
         </div>
     </section>
 
@@ -724,13 +889,12 @@
                 <li class="list-inline-item footer-menu"><a href="#contacto">Contacto</a></li>
             </ul>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a>
+
+                <li class="list-inline-item"><a class="redes-facebook"
+                        href="https://www.facebook.com/Next-Photo-110308234225764" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
                 </li>
-                <li class="list-inline-item"><a href="https://www.facebook.com/Next-Photo-110308234225764"
-                        target="_blank"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a>
-                </li>
+
             </ul>
             <small>©2020 Next Photo <a href="https://www.facebook.com/jesusemmanuel.lerma/" class="font-weight-bold"
                     target="_blank" rel="noopener"> by: @Emmanuel y @Armando</a></small>

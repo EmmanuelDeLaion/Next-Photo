@@ -10,6 +10,8 @@ body,html{
     scroll-behavior: auto;
     scroll-behavior: smooth;
     margin-top: 45px;
+    overflow-y: scroll;
+
 }
 
 
@@ -19,10 +21,7 @@ body,html{
     margin: auto;
 }
 
-
-body, html{
-    overflow-y: scroll;
-}
+ 
 body::-webkit-scrollbar{
     width: 5px;
     border-radius: 10px;
@@ -283,15 +282,10 @@ span{
     text-align: center;
 }
 
-.margen{
-
-}
+ 
 
 /* paquetes */
-.seccion-paquetes{
-    padding: 50px;
-}
-
+ 
 .card{
     border-radius: 15px;
     padding: 10px;
@@ -462,11 +456,16 @@ footer .list-inline .list-inline-item {
     padding: 10px 15px;
 }
 
+footer .redes-facebook{
+    font-size: 40px;
+}
+
+footer .redes-facebook:hover{
+    color: #FFB300;
+}
 
 
-
-
-
+ 
 /* equipo  */
 .max-width{
     max-width: 1300px;
@@ -475,9 +474,6 @@ footer .list-inline .list-inline-item {
 }
  
 
- 
- 
- 
 
 
 /* services section styling */
